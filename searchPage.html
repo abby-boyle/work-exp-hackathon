@@ -7,17 +7,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="MeghaCSS.css" rel="stylesheet">
 </head>
-<h1>ASTRONOMY</h1>
+<h1>Curiousity</h1>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.asp">Curiousity</a></li>
-            <li><a href="quiz.asp">Quiz</a></li>
-          </ul>
-        </div>
-    </nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="searchPage.html">Curiousity</a></li>
+        <li><a href="funfacts.html">Fun Facts</a></li>
+      </ul>
+
+      <button onclick="myFunction()">Click me</button>
+      <p id="opacity"></p>
+
+
+
       <select name="cameras">
         <option value="FHAZ">Front Hazard Avoidance Camera</option>
         <option value="RHAZ">Rear Hazard Avoidance Camera</option>
@@ -28,11 +30,14 @@
         <option value="NAVCAM">Navigation Camera</option>
     </select>
 
-    <div class="background">
-        <div class="layer">
-        </div>
-    </div>
 
+        <script>
+            function myFunction() {
+            document.body.style.backgroundColor= "green";
+            document.body.style.color= "green";
+            document.body.style.text = "green";
+            }
+            </script>
 </body>
 </html>
 
