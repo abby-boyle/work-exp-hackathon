@@ -8,13 +8,21 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
+<h1>Fun Facts</h1>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="searchPage.html">Curiousity</a></li>
-            <li><a href="funfacts.html">Fun Facts</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="searchPage.html">Curiousity</a></li>
+            <li><a class="nav-link" href="funfacts.html">Fun Facts</a></li>
+          </ul>
+        </div>
     </nav>
 
     <button onclick="myFunction()">Click me</button>
@@ -22,11 +30,44 @@
 
     <h1>Fun Facts</h1>
     <div id="fun_facts_content">
-        <h2>Fun Facts</h2>
-        <p>Fun facts about the rover</p>
+        <h2>Fun Facts about the Rover Curiousity</h2>
+        <p>
+            Curiosity is about 3 metres (10 feet) long and weighs about 900 kg (2,000 pounds), which makes it the longest 
+            and heaviest rover on Mars. (By contrast, the Mars Exploration Rovers, Spirit and Opportunity, are 1.6 metres 
+            [5.2 feet] long and weigh 174 kg [384 pounds].) Unlike previous rovers, Curiosity did not have its landing cushioned 
+            by air bags; rather, because of its large size, it was lowered to the surface by three tethers from the spacecraft’s body, 
+            called the sky crane. <br />
+
+            The landing sequence was highly intricate. After a parachute significantly slowed the vehicle and after its heat 
+            shield—which had protected the rover during its entry into the atmosphere—was discarded, the spacecraft was eased 
+            toward the planet’s surface by rockets that stabilized the vehicle, allowing it to hover and protecting it from horizontal winds. 
+            Curiosity had also shed its protective shell on the way to the planet’s surface, and its mobility system—wheels and suspension—had 
+            already been released while still in the air. Curiosity was therefore ready to rove immediately after it landed, unlike the Mars Exploration 
+            Rovers, which had to wait for their lander “petals” that enclosed the rovers to open. Once touchdown of Curiosity had occurred, 
+            onboard computers released the tethers. The sky crane then pitched away and crashed far from Curiosity.
+        </p>
     </div>
     <form>
-        
+        <p>complete a Small quiz to win a free chocolate</p>
+        Name: <br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="Q1">How heavy does the Curiousity rover weigh?</label><br>
+        <input type="number" id="Q1" name="Q1"><br><br>
+
+        <label for="Q2">What allowed the Curiosity to stabilize during the landing on Mars?</label><br>
+        <input type="radio" id="rocket"name="rocket" value="rocket">
+        <label for="rocket">Rocket</label><br>
+        <input type="radio" id="wheel" value="wheel">
+        <label for="wheel">wheel</label><br>
+        <input type="radio" id="arms" name="arms" value="arms">
+        <label for="arms">arms</label><br>
+        <input type="radio" id="legs" name="legs" value="legs">
+        <label for="legs">legs</label>
+        <br><br>
     </form>
     <script>
         function myFunction() {
