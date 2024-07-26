@@ -22,3 +22,9 @@ ul{
     width: 100%;
     background-color: green;
 }
+
+
+#website_contents {
+    float:left;
+}
+
