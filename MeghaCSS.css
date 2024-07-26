@@ -30,3 +30,7 @@ ul{
     height: 100%;
 }
 
+#website_contents {
+    float:left;
+}
+
